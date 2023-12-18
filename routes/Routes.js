@@ -1,6 +1,6 @@
-import AuthController from "../controllers/AuthController.js";
+const AuthController = require("../controllers/AuthController.js")
 
-import express from "express"
+const express = require('express')
 
 const Route = express.Router()
 
@@ -11,4 +11,4 @@ Route.post('/Signup', AuthController.Signup)
 
 
 
-export default Route
+module.exports = Route

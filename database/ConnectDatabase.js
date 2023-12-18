@@ -1,5 +1,5 @@
 
-import mongoose from "mongoose";
+const mongoose = require("mongoose")
 
 const ConnectDatabase = () => {
     mongoose.set('strictQuery', true);
@@ -9,4 +9,4 @@ const ConnectDatabase = () => {
     db.once("open", () => console.log("DB Connected"));
 }
 
-export default ConnectDatabase
+module.exports = ConnectDatabase

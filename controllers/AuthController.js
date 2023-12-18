@@ -1,6 +1,6 @@
-import UserModel from "../models/UserModel.js";
-import bcrypt from 'bcryptjs'
-import JWT from 'jsonwebtoken'
+const UserModel = require("../models/UserModel.js")
+const bcrypt = require('bcryptjs')
+const JWT =  require('jsonwebtoken')
 class AuthController {
 
     static Signup = async (req, res) => {
@@ -122,4 +122,4 @@ class AuthController {
 }
 
 
-export default AuthController
+module.exports = AuthController

@@ -1,6 +1,6 @@
-import express from 'express'
-import ConnectDatabase from './database/ConnectDatabase.js'
-import Route from './routes/Routes.js'
+const express = require('express')
+const ConnectDatabase = require('./database/ConnectDatabase.js')
+const Route = require('./routes/Routes.js')
 
 const app = express()
 
